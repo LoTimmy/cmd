@@ -14,18 +14,23 @@ shell> sudo arp-scan -I en0 192.168.31.0/24
 shell> sudo arp-scan -I en0 192.168.31.1-192.168.31.50
 ```
 
-`/usr/share/arp-scan/ieee-oui.txt`
-`/usr/share/arp-scan/ieee-iab.txt`
-`/usr/local/Cellar/arp-scan/1.9/share/arp-scan`
+- `/usr/share/arp-scan/ieee-oui.txt`
+- `/usr/share/arp-scan/ieee-iab.txt`
+- `/usr/local/Cellar/arp-scan/1.9/share/arp-scan`
 
 ```
 shell> get-iab
-shell> get-oui
-```
+shell> get-iab -v
 
+shell> get-oui
+shell> get-oui -v
+```
 
 ```
 shell> arp-fingerprint 192.168.0.1
 shell> arp-fingerprint -o "-N -I eth1" 192.168.0.202
 ```
 
+#### :books: 參考網站：
+- [arp-scan](https://github.com/royhills/arp-scan)
+- [arp-scan - The ARP scanner](http://manpages.ubuntu.com/manpages/trusty/man1/arp-scan.1.html)

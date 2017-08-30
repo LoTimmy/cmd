@@ -3,19 +3,25 @@ autojump
 ### 安裝 {#installing}
 
 ```
+shell> apt-get install autojump
 shell> brew install autojump
 ```
 
-`.zshrc`
-```
+- `.zshrc`
+- `.bash_profile`
+```sh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 ```
 
 ```
+shell> autojump --help
 shell> autojump -s
 shell> autojump --purge
 shell> autojump -i [WEIGHT]
 shell> autojump -d [WEIGHT]
+```
+```
+shell> j foo
 ```
 
 #### :books: 參考網站：
