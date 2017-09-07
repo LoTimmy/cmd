@@ -1,4 +1,4 @@
-autojump
+`autojump - shell extension to jump to frequently used directories`
 
 ### 安裝 {#installing}
 
