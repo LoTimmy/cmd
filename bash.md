@@ -199,7 +199,7 @@ shell> start-stop-daemon --stop --name test.sh
 
 `Carriage Return`
 `歸位字元`
-`↵``
+`↵`
 
 ```sh
 #!/bin/bash
