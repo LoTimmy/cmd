@@ -32,6 +32,51 @@ forward-socks5t .onion 127.0.0.1:9050 .
 ```
 
 ```
+{{alias}}
+
+tor = +forward-override{forward-socks5t 127.0.0.1:9050 .}
+tinyproxy = +forward-override{forward 127.0.0.1:8888}
+shadowsocks = +forward-override{forward-socks5 127.0.0.1:1080 .}
+
+# +forward-override{forward .}
+
+{+block}
+{-block}
+
+{ +block-as-image }
+
+{ +block{Nasty ads.} }
+www.example.com/nasty-ads/sponsor.gif
+
+{ -crunch-incoming-cookies -crunch-outgoing-cookies -session-cookies-only -filter{content-cookies} }
+.example.com
+```
+```
+ ############################################################
+ # Blacklist
+ ############################################################
+ { +block }
+ / # Block *all* URLs
+
+ ############################################################
+ # Whitelist
+ ############################################################
+ { -block }
+  kids.example.com
+  toys.example.com
+  games.example.com
+```
+
+```
+{ +block }
+ www.ad.example1.com
+ ad.example2.com
+ ads.galore.example.com
+ etc.example.com
+
+```
+
+```
 permit-access  localhost
 
 permit-access  192.168.45.64/26

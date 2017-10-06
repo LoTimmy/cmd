@@ -5,6 +5,33 @@
 
 ---
 
+```sh
+reset="\033[0m"
+red="\033[31m"
+green="\033[32m"
+yellow="\033[33m"
+cyan="\033[36m"
+white="\033[37m"
+
+printf "$cyan helloworld $reset\n"
+printf "$red foobar $reset\n"
+```
+
+---
+
+```sh
+echo ${0}
+echo ${1}
+echo ${1:-foo}
+```
+
+```sh
+#!/bin/bash
+curl -s http://ip.taobao.com//service/getIpInfo.php?ip=${1:-myip} | jq
+```
+
+---
+
 ```
 shell> foo='() { echo not patched; }' bash -c foo
 ```

@@ -1,6 +1,7 @@
 ### 安裝 {#installing}
 
 ```
+shell> sudo easy_install pip
 shell> pip install csvkit
 ```
 ```

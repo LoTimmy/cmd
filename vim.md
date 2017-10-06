@@ -292,6 +292,58 @@ set foldlevel=0
 
 ---
 
+`VundleVim`
+
+`~/.vim/bundle/`
+
+```
+shell> git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+```vim
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
+filetype plugin indent on
+```
+
+`:PluginInstall`
+
+```
+shell> vim +PluginInstall +qall
+```
+
+```vim
+Plugin 'vim-syntastic/syntastic'
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['jshint']
+```
+```vim
+let g:syntastic_<filetype>_checkers = ['<checker-name>']
+```
+
+`:SyntasticInfo`
+
+
+#### :books: 參考網站：
+- https://github.com/VundleVim/Vundle.vim
+- https://github.com/vim-syntastic/syntastic
+
+---
+
 #### :books: 參考網站：
 - http://vimdoc.sourceforge.net/htmldoc/options.html
 - http://public.dhe.ibm.com/software/dw/aix/sample.vimrc
