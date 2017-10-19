@@ -20,6 +20,22 @@ printf "$red foobar $reset\n"
 ---
 
 ```sh
+myarray=(
+  red
+  green
+  yellow
+  cyan
+  white
+)
+
+echo ${myarray[0]}
+echo ${myarray[1]}
+echo ${myarray[@]}
+```
+
+---
+
+```sh
 echo ${0}
 echo ${1}
 echo ${1:-foo}
