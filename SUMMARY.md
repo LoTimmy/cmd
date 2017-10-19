@@ -81,5 +81,6 @@
     * [tree](tree.md)
     * [tshark](tshark.md)
     * [vim](vim.md)
+    * [neovim](neovim.md)
     * [vlmcsd](vlmcsd.md)
     * [wget](wget.md)
