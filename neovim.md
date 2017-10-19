@@ -34,8 +34,14 @@ set number
 set cursorline
 ```
 
-`:PlugInstall`
+- `:PlugInstall`
+- `:help commentary`
 
+```
+shell> nvim scp://192.168.88.18/~/myfile.txt
+```
+
+#### :books: 參考網站：
 - https://github.com/neovim/neovim
 - https://github.com/mattn/emmet-vim
 - https://github.com/scrooloose/nerdtree
