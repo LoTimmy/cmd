@@ -3,6 +3,12 @@
 ```
 shell> brew install privoxy
 shell> apt-get install privoxy
+shell> lsof -i -n -P | grep privoxy
+```
+
+```
+COMMAND     PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+privoxy     452 user    3u  IPv4 0x6859470d632f37eb      0t0  TCP 127.0.0.1:8118 (LISTEN)
 ```
 
 `/usr/local/etc/privoxy`
