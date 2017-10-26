@@ -513,3 +513,23 @@ iptables -I DOS_PROTECT -i bond0 -p icmp --icmp-type echo-request -m limit --lim
 
 ![](https://i.imgur.com/qqG1RsI.png)
 ![](https://i.imgur.com/ijCrsH6.png)
+
+---
+
+```
+iptables -t nat -A PREROUTING -m iprange --src-range 192.168.1.10-192.168.1.150 -p tcp --dport 80 -j REDIRECT --to-port 3128
+```
+
+#### :books: 參考網站：
+- https://www.netfilter.org/documentation/HOWTO/NAT-HOWTO-6.html
+- http://ipset.netfilter.org/iptables-extensions.man.html
+
+
+
+
+
+
+
+
+
+
