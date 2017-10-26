@@ -1,5 +1,11 @@
 <img src="http://i.imgur.com/VzpZv22.png" width="100">
 
+```
+shell> curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+
 ---
 <kbd>Ctrl</kbd> + <kbd>V</kbd>, <kbd>Ctrl</kbd> + <kbd>M</kbd>
 
