@@ -57,6 +57,7 @@
     * [packer](packer.md)
     * [pip](pip.md)
     * [pppoeconf](pppoeconf.md)
+    * [powerline](powerline.md)
     * [privoxy](privoxy.md)
     * [proxychains4](proxychains4.md)
     * [putty-tools](putty-tools.md)

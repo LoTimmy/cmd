@@ -29,4 +29,5 @@ Requires:
 
 ```
 . /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 ```
