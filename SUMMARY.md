@@ -77,6 +77,7 @@
     * [sysv-rc-conf](sysv-rc-conf.md)
     * [tcptrack](tcptrack.md)
     * [timedatectl](timedatectl.md)
+    * [tmate](tmate.md)
     * [tor](tor.md)
     * [tree](tree.md)
     * [tshark](tshark.md)
