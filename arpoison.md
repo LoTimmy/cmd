@@ -1,3 +1,5 @@
+`arpoison -- arp cache update utility`
+
 ### 安裝 {#installing}
 
 ```
@@ -63,13 +65,6 @@ print randomMAC()
 shell> sysctl -w net.inet.ip.forwarding=1
 ```
 
-
-
-
+#### :books: 參考網站：
 - https://www.centos.org/docs/5/html/5.2/Virtualization/sect-Virtualization-Tips_and_tricks-Generating_a_new_unique_MAC_address.html
 
-
-<!--
-http://www.linuxhub.org/?p=1644
-https://jingyan.baidu.com/article/84b4f565c4f9e760f7da3251.html
--->

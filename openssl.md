@@ -548,3 +548,10 @@ shell> openssl x509 -req -in server-req.pem -days 7305 -CA ca-cert.pem -CAkey ca
 - [連鎖都失效了，不換新怎會安全](http://www.ithome.com.tw/voice/86876)
 - [全面解讀電子簽章法（三）](http://www.ithome.com.tw/node/14824)
 - [http://www.ithome.com.tw/news/89871](http://www.ithome.com.tw/news/89871)
+
+---
+
+```
+shell> openssl rsa -outform pem -in ~/.ssh/id_rsa -out id_rsa.pem
+shell> chmod 600 id_rsa.pem
+```
