@@ -1,3 +1,9 @@
+### 安裝 {#installing}
+
+```
+shell> apt-get install python-pip
+```
+
 ```
 shell> pip2 install powerline-status
 shell> pip2 show powerline-status
@@ -30,4 +36,9 @@ Requires:
 ```
 . /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 . /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+```
+
+```sh
+[ -f /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ] && . /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+[ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh ] && . /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 ```

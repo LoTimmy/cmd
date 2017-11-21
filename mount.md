@@ -86,3 +86,16 @@ shell> fusermount -u /mnt/ftp
 - [curlftpfs](cmd/curlftpfs.md)
 - [mount.fuse](http://manpages.ubuntu.com/manpages/precise/man8/mount.fuse.8.html)
 - [fusermount](http://manpages.ubuntu.com/manpages/precise/man1/fusermount.1.html)
+
+---
+
+```
+shell> mkdir /Volumes/mntpnt
+shell> mount_afp afp://username:userpass@server.company.com/volumename/ /Volumes/mntpnt
+
+shell> mkdir /Volumes/guest
+shell> mount_afp "afp://myserver/guestVolume" /Volumes/guest
+
+shell> mkdir /Volumes/myVolume
+shell> mount_afp "afp://;AUTH=Client%20Krb%20v2@myserver/myVolume" /Volumes/myVolume
+```

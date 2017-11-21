@@ -1,6 +1,7 @@
 ### 安裝 {#installing}
 
 ```
+shell> brew install csvkit
 shell> sudo easy_install pip
 shell> pip install csvkit
 ```
@@ -20,6 +21,12 @@ shell> csvlook data.csv
 shell> csvcut -n data.csv
 shell> csvcut -c 1,3 data.csv
 shell> csvcut -c 1,3 data.csv | csvlook
+```
+
+```
+shell> in2csv data.json > data.csv
+shell> csvgrep -c phone_number -r "555-555-\d{4}" data.csv > new.csv
+shell> csvsql --query "select name from data where age > 30" data.csv > new.csv
 ```
 
 #### :books: 參考網站：

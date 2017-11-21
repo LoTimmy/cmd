@@ -21,16 +21,15 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-markdown'
-Plug 'ternjs/tern_for_vim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-Plug 'scrooloose/nerdtree'
 Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
 Plug 'easymotion/vim-easymotion'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 call plug#end()
 
+set t_Co=256
 syntax enable
 set background=dark
 " set background=light
@@ -44,20 +43,17 @@ set laststatus=2
 let mapleader = ","
 nmap <Leader>p <Plug>(Prettier)
 
-autocmd vimenter * NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
 
 set number
 set cursorline
-```
+set mouse-=a
 
-```
-cd ~/.vim/plugged/YouCompleteMe
-./install.py --all
-
-./install.py --clang-completer
-./install.py --js-completer
-./install.py --tern-completer
+au BufNewFile,BufRead Brewfile setf brew
+autocmd FileType brew setlocal commentstring=#\ %s
 ```
 
 - `:CheckHealth`
@@ -66,6 +62,18 @@ cd ~/.vim/plugged/YouCompleteMe
 - `:PlugStatus`
 - `:Prettier`
 - `:help commentary`
+
+```
+set noai
+set nocin
+set nosi
+set inde=
+
+noautoindent
+nocindent
+nosmartindent
+indentexpr
+```
 
 ```
 shell> nvim scp://192.168.88.18/~/myfile.txt
